@@ -1,0 +1,131 @@
+<main id="main">
+<h1 id="title"> Lily's Survey</h1>
+  <p id="description"> Thank you for completing my survey. My survey is just for fun. </p>
+  <form id="survey-form">
+    <div class="form-group">
+    <label id="name"
+           for="name"> Please put your name here! </label>
+      <input
+        type="text"
+        name="name"
+        id="name-label"
+        class="form-control"
+        placeholder="Enter name"
+        required
+      />
+  </div>
+
+  <div class="form-group">
+  <label id="email" for="email">Please put your email here! </label>
+    <input
+        type="text"
+        name="email"
+        id="email-label"
+        class="form-control"
+        placeholder="Enter email"
+        required
+      />
+  </div>
+
+  <div class="form-group">
+    <label id="number" for="number">Please enter your age here!</label>
+    <input
+       type="number"
+       name="age"
+       id="number-label"
+       min="18"
+       max="120"
+       class="form-control"
+       placeholder="#"
+       required
+           />
+    </div>
+ <div class="form-group">
+   <p>Please choose from the following options of radio buttons</p>
+   <select id="dropdown" name="role" class="form-control" required>
+     <option disabled selected value>Current role</option>
+     <option value= "student">Student</option>
+     <option value="worker">Worker</option>
+     <option value="unemployed">Unemployed</option>
+     <option value="Prefer not to say">Prefer not to say</option>
+     </div>
+
+ <div class="form-group">
+   <p>Would you like to read more about animal conservation?
+      </p>
+   <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        >definitely</label>
+   <label>
+     <input
+            name="user-recommend"
+            value="no thank you"
+            type="radio"
+            class="input-radio"
+            checked>no thank you</label>
+   </div>
+
+    <div class="form-group">
+      <p>
+        What would you like to read more about?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="Mammals"
+          type="checkbox"
+          class="input-checkbox"
+        />Mammals</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="Birds"
+          type="checkbox"
+          class="input-checkbox"
+        />Birds</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="Amphibians"
+          type="checkbox"
+          class="input-checkbox"
+        />Amphibians</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="Insects"
+          type="checkbox"
+          class="input-checkbox"
+        />Insects</label
+      >
+      </div>
+
+    <div class="form-group">
+      <p>Do you have any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+   <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+   </form>
+
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
